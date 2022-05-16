@@ -39,6 +39,9 @@ input{
 .text-slider{
     align-self: center; 
     transition: 1s;
+    font-size: 1.7rem;
+    width: 100%;
+    flex-shrink: 0;
 }
 .text-radio{
     width: 100%;    
@@ -57,12 +60,12 @@ input{
     width: 100%;
 }
 p{
-    font-size: 1.7rem;
-    width: 35rem;
+    
+    margin-right: 30rem;
 }
 .radio{
     margin-top: 2rem;
-    margin-left: 9rem;
+    margin-left: 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -124,6 +127,9 @@ input#rb4:checked ~ .text-radio > .text-slider-hidden >.text > .text-slider{
     }
     .text-slider-hidden{
         order: 2;
+    }
+    .text-slider{
+        font-size: 1.3rem;
     }
     .text{ 
         margin-top: 1rem;
