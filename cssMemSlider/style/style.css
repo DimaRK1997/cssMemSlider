@@ -83,3 +83,35 @@ p{
     background: rebeccapurple;
     border-radius: 1.2rem;
 }
+
+input#rb1:checked ~ .text-radio > .radio > label[for="rb1"] > .radio-button,
+input#rb2:checked ~ .text-radio > .radio > label[for="rb2"] > .radio-button,
+input#rb3:checked ~ .text-radio > .radio > label[for="rb3"] > .radio-button,
+input#rb4:checked ~ .text-radio > .radio > label[for="rb4"] > .radio-button {
+    background-color: rgba(255, 255, 255, 0.9);
+} 
+input#rb1:checked ~ .slider > .slider-images {
+    transform: translateX(0);
+}
+input#rb2:checked ~ .slider > .slider-images {
+    transform: translateX(-100%);
+}
+input#rb3:checked ~ .slider > .slider-images {
+    transform: translateX(-200%);
+}
+input#rb4:checked ~ .slider > .slider-images {
+    transform: translateX(-300%);
+}
+
+input#rb1:checked ~ .text-radio > .text-slider-hidden > .text > .text-slider {
+    transform: translateX(0);
+}
+input#rb2:checked ~ .text-radio > .text-slider-hidden >.text > .text-slider{
+    transform: translateX(-100%);
+}
+input#rb3:checked ~ .text-radio > .text-slider-hidden >.text > .text-slider{
+    transform: translateX(-200%);
+}
+input#rb4:checked ~ .text-radio > .text-slider-hidden >.text > .text-slider{
+    transform: translateX(-300%);
+}
