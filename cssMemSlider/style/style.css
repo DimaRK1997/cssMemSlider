@@ -115,3 +115,20 @@ input#rb3:checked ~ .text-radio > .text-slider-hidden >.text > .text-slider{
 input#rb4:checked ~ .text-radio > .text-slider-hidden >.text > .text-slider{
     transform: translateX(-300%);
 }
+
+@media (max-width: 767px){
+    .radio{
+        order: 1;
+        margin-left: 0;
+        justify-content: center;
+    }
+    .text-slider-hidden{
+        order: 2;
+    }
+    .text{ 
+        margin-top: 1rem;
+    }
+    .text-radio{       
+        flex-direction: column;
+    }
+}
