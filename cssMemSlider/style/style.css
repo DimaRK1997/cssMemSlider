@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{ 
+    background: linear-gradient(45deg, #416e89d9, transparent);
+}
+.container{
+    width: calc(40% + 140px);
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    display: none;
+}
+.slider-images{
+    display: flex;
+    flex-direction: row;
+    transition: 1s;
+}
+.slider{
+    width: 100%;
+    max-width: 50rem;
+    overflow: hidden;
+    border-radius: 0.9rem;
+    box-shadow: 0 0 1rem 1rem #421b41;
+}
+.images{
+    width: 100%;
+}
+.img{
+    width: -webkit-fill-available;
+    float: left;
+}
+.text-slider{
+    align-self: center; 
+    transition: 1s;
+}
+.text-radio{
+    width: 100%;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 50rem;
+}
+.text-slider-hidden{
+    overflow: hidden;
+}
+.text{  
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+p{
+    font-size: 1.7rem;
+    width: 35rem;
+}
+.radio{
+    margin-top: 2rem;
+    margin-left: 9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.radio-control:hover>.radio-button{
+    cursor: pointer;
+    background: white;
+    transition: 0.5s;
+}
+.radio-control:hover{
+    cursor: pointer;
+}
+.radio-button{
+    margin: 5px;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: rebeccapurple;
+    border-radius: 1.2rem;
+}
